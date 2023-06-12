@@ -1,0 +1,103 @@
+* {
+    font-family: monospace;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, rgb(2, 255, 198) 4%, rgb(36, 157, 161) 34%, rgb(218, 139, 236) 89%);
+}
+
+.calculator {
+    width: 300px;
+    height: 400px;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 40%, rgba(148, 187, 233, 1) 100%);
+    border: 5px outset #945EA4;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.result {
+    width: 250px;
+    height: 35px;
+    background-color: rgba(234, 176, 252, 0.192);
+    color: rgb(0, 0, 0);
+    text-align: right;
+    font-size: 220%;
+    font-weight: bold;
+    border: 3px inset rgba(28, 110, 164, 0.5);
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: auto;
+}
+
+.keys {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    box-shadow: 6px 5px 5px 0px rgba(0, 0, 0, 0.15);
+    opacity: .8;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.num:hover {
+    opacity: 1;
+}
+
+#zero {
+    width: 116px;
+}
+
+.logbox {
+    min-width: 300px;
+    height: 400px;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 40%, rgba(148, 187, 233, 1) 100%);
+    border: 5px outset #945EA4;
+    border-radius: 10px;
+    padding: 15px;
+    margin-left: 5px;
+    font-size: large;
+    font-weight: bold;
+    overflow: auto;
+}
+
+#btn-clearlog {
+    margin: 3px;
+    width: 55px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 6px 5px 5px 0px rgba(0, 0, 0, 0.15);
+    opacity: .8;
+    font-size: medium;
+    font-weight: bold;
+    float: right;
+    bottom: 20px;
+}
+
+#clearlog:hover {
+    opacity: 1;
+}

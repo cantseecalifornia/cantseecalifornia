@@ -1,0 +1,88 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 230, 250);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 250px;
+    background-color: rgb(30, 30, 30);
+    color: aliceblue;
+    box-shadow: 10px 10px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    margin-top: 20px;
+    border: 0;
+    border-radius: 5px;
+    background: rgb(75, 75, 75);
+    color: aliceblue;
+    padding: 8px 16px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgb(100, 100, 100);
+}
+
+.tt {
+    position: absolute;
+    color: aliceblue;
+    align-self: flex-end;
+    margin-right: 20px;
+    margin-top: -190px;
+}
+
+.tt .tooltip {
+    width: 270px;
+    position: inherit;
+    margin-left: -150px;
+    margin-top: -40px;
+    font-size: small;
+    visibility: hidden;
+    background-color: rgb(75, 75, 75);
+    color: aliceblue;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tt:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.copied-rgb {
+    position: absolute;
+    margin-bottom: 200px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.copied-hex {
+    position: absolute;
+    margin-bottom: 50px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
