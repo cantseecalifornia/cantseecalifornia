@@ -1,2 +1,1 @@
-### Hi there 👋
-https://cantseecalifornia.github.io/cantseecalifornia/
+# ✨[my projects page](https://cantseecalifornia.github.io/cantseecalifornia/)✨
