@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="shop.css">
+  <link rel="stylesheet" href="slick.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Pacifico&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <title>shop...</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo-box">
+      <img src="logo.svg" width="200px" alt="logo">
+      <p>Buy and Cry!</p>
+    </div>
+    <div class="search-box">
+      <span class="material-symbols-outlined" id="search">search</span>
+      <input type="text" maxlength="59" class="search-area" placeholder="Поиск">
+    </div>
+    <div class="user-menu">
+      <a href="#" title="Корзина"><span class="material-icons-outlined" id="cart">shopping_cart</span></a>
+      <a href="#" title="Список желаемого"><span class="material-icons-outlined" id="grade">grade</span></a>
+      <a href="#" title="Аккаунт"><span class="material-icons-outlined" id="account">account_circle</span></a>
+    </div>
+  </header>
+
+  <nav class="menu-box">
+    <ul class="menu">
+      <li>
+        <a href="#">Каталог</a>
+        <ul class="submenu">
+          <li><a href="#">Apple</a></li>
+          <li><a href="#">Xiaomi</a></li>
+          <li><a href="#">OnePlus</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Доставка</a></li>
+      <li><a href="#">Контакты</a></li>
+      <li><a href="#">О компании</a></li>
+    </ul>
+  </nav>
+
+  <main class="content-box">
+    <div class="carousel">
+      <div>
+        <div class="product">
+          <img src="images/carousel/iphone.png" alt="">
+          <h1>Apple iPhone 14 Pro и Pro Max</h1>
+        </div>
+      </div>
+      <div>
+        <div class="product">
+          <img src="images/carousel/ipad.png" alt="">
+          <h1>Apple iPad Air на чипе M1</h1>
+        </div>
+      </div>
+      <div>
+        <div class="product">
+          <img src="images/carousel/macbook.png" alt="">
+          <h1>Apple MacBook Pro 14 дюймов и MacBook Pro 16 дюймов</h1>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <h1 class="news-title">Новости</h1>
+      <h1 class="sales-title">Скидки</h1>
+      <div class="news">
+        <div class="news-1">
+          <a href=""><img src="images/miband8.jpg" alt=""></a>
+          <p class="news-1-title">Тренер на запястье: история фитнес-браслетов<br>от первого шагомера до Xiaomi Mi Band
+            8</p>
+        </div>
+        <div class="news-2">
+          <a href=""><img src="images/mijia_pipi.jpg" alt=""></a>
+        </div>
+        <div class="news-2-title">Компания Xiaomi представила умную лампу Mijia Pipi</div>
+        <div class="news-3">
+          <a href=""><img src="images/onepluspad.jpg" alt=""></a>
+        </div>
+        <div class="news-3-title">Вот и OnePlus сделали свой первый планшет — OnePlus Pad</div>
+        <div class="news-4">
+          <a href=""><img src="images/psvr2.jpg" alt=""></a>
+        </div>
+        <div class="news-4-title">Компания Sony начала продажи своего долгостроя — PlayStation VR2</div>
+      </div>
+      <div class="sales">
+        <div class="sales-1-image"><a href=""><img src="images/sales/airpods.png" alt=""></a></div>
+        <div class="sales-price">
+          <p class="sales-normal-price" id="np">200$</p>
+          <p class="sales-discount-price" id="dp">120$</p>
+          <p class="sales-percentage" id="sp"></p>
+        </div>
+        <div class="sales-1-title">Apple AirPods 2</div>
+        <div class="sales-2-image"><a href=""><img src="images/sales/lightning.png" alt=""></a></div>
+        <div class="sales-price">
+          <p class="sales-normal-price" id="np">15$</p>
+          <p class="sales-discount-price" id="dp">10$</p>
+          <p class="sales-percentage" id="sp"></p>
+        </div>
+        <div class="sales-2-title">Apple Lightning/USB</div>
+        <div class="sales-3-image"><a href=""><img src="images/sales/mac.png" alt=""></a></div>
+        <div class="sales-price">
+          <p class="sales-normal-price" id="np">2300$</p>
+          <p class="sales-discount-price" id="dp">1500$</p>
+          <p class="sales-percentage" id="sp"></p>
+        </div>
+        <div class="sales-3-title">Apple Macbook Pro 14" M1 Pro</div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="contacts">
+      <div class="phone">
+        <p>&#9742; <a href="tel:">+ 8 (800) 555 35 35</a></p>
+      </div>
+      <div class="email">
+        <p>&#9993; <a href="email">bacshop@email.com</a></p>
+      </div>
+      <div class="info">
+        <p>&#169; 2023 cantseecalifornia</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores at eos, dicta similique maiores, quisquam repellendus blanditiis officia veniam itaque alias autem, velit explicabo? Necessitatibus hic quasi nihil tempore veniam.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="btn-scrollToTop"><input type="button" id="scrollToTop" value="&#129045;"></div>
+</body>
+
+<script src="jquery-3.7.0.min.js"></script>
+<script src="slick.min.js"></script>
+<script src="shop.js"></script>
+
+</html>
