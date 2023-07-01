@@ -75,7 +75,7 @@ input::-webkit-inner-spin-button {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
     input {
         width: 15rem;
