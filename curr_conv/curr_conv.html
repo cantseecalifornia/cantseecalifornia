@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="curr_conv.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>currency converter</title>
+</head>
+
+<body>
+    <div class="container">
+    <div class="currency">
+        <p>USD: <span class="cur-usd"></span></p>
+        <p>EUR: <span class="cur-eur"></span></p>
+        <p>RUB: <span class="cur-rub"></span></p>
+    </div>
+    <div class="convert">
+        <p>BYN: <input type="number" class="byn-input" placeholder="0.00"></p>
+        <p>USD: <input type="number" id="usdId" class="usd-input" placeholder="0.00"></p>
+        <p>EUR: <input type="number" id="eurId" class="eur-input" placeholder="0.00"></p>
+        <p>RUB: <input type="number" id="rubId" class="rub-input" placeholder="0.00"></p>
+    </div>
+</div>
+    <script src="https://www.cbr-xml-daily.ru/money.js"></script>
+    <script src="curr_cons.js"></script>
+</body>
+
+</html>

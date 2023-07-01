@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    color: white;
+}
+
+body {
+    background-color: #151965;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(bg.svg);
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.currency {
+    padding: 2rem 2rem;
+    background-color: rgba(14, 42, 71, 0.9);
+    border: 0.2rem solid rgba(9, 26, 44, 0.9);
+    border-radius: 0.7rem;
+    margin-right: 1rem;
+}
+
+.currency p {
+    padding: 0.5rem;
+}
+
+.convert {
+    padding: 2rem 2rem;
+    background-color: rgba(14, 42, 71, 0.9);
+    border: 0.2rem solid rgba(9, 26, 44, 0.9);
+    border-radius: 0.7rem;
+}
+
+input {
+    width: 25rem;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    outline: none;
+    margin: 0.5rem;
+    background-color: rgba(43, 106, 129, 0.3);
+    color: white;
+    border-radius: 0.7rem;
+    padding-left: 1rem;
+}
+
+input::placeholder {
+    color: white;
+  }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media screen and (max-device-width: 1077px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.9rem;
+    }
+    input {
+        width: 15rem;
+        font-size: inherit;
+        border-radius: 0.7rem;
+    }
+
+    .currency {
+        padding: 0.7rem;
+        margin: 1rem;
+    }
+    .convert {
+        padding: 0.7rem;
+        margin: 0rem 1rem 1rem 1rem;
+    }
+  }
