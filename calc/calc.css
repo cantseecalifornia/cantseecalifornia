@@ -42,6 +42,7 @@ body {
 }
 
 .keys {
+    color: #000;
     width: 300px;
     display: flex;
     flex-wrap: wrap;
