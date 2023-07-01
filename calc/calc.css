@@ -101,3 +101,9 @@ body {
 #clearlog:hover {
     opacity: 1;
 }
+
+@media screen and (max-device-width: 1000px) {
+    .logbox {
+        display: none;
+    }
+  }
