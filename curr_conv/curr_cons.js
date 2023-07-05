@@ -14,9 +14,9 @@ axios.get("https://api.nbrb.by/exrates/rates?periodicity=0")
         rateUSD = res.data[indexUSD].Cur_OfficialRate;
         rateEUR = res.data[indexEUR].Cur_OfficialRate;
         rateRUB = res.data[indexRUB].Cur_OfficialRate;
-        curUSD.textContent = rateUSD;
-        curEUR.textContent = rateEUR;
-        curRUB.textContent = rateRUB / 100;
+        curUSD.textContent = (rateUSD).toFixed(4);
+        curEUR.textContent = (rateEUR).toFixed(4);
+        curRUB.textContent = (rateRUB / 100).toFixed(4);
     })
 
 bynInput.addEventListener('input', () => {
