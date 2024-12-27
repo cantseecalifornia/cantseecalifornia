@@ -1,1 +1,1 @@
-# ✨[my projects page](https://cantseecalifornia.github.io/cantseecalifornia/)✨
+# ✨[projects](https://cantseecalifornia.github.io/cantseecalifornia/)✨
