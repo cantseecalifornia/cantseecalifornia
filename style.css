@@ -1,7 +1,7 @@
 :root {
   --bg-dark: #0a0a0c;
   --card-bg: rgba(255, 255, 255, 0.03);
-  --accent-blue: #e0e0e0;
+  --accent-white: #e0e0e0;
   --text-main: #e0e0e0;
 }
 
@@ -55,7 +55,7 @@ body {
 
 .card:hover {
   background: rgba(255, 255, 255, 0.07);
-  border-color: var(--accent-blue);
+  border-color: var(--accent-white);
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 
               0 0 15px rgba(0, 212, 255, 0.1);
