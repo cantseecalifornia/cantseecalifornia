@@ -1,7 +1,7 @@
 const textInput = document.getElementById('input-text');
 const textOutput = document.getElementById('output-text');
 
-textInput.addEventListener('input', () => { 
+textInput.addEventListener('input', () => {
     let text = textInput.value;
 
     textOutput.value = text
@@ -9,8 +9,9 @@ textInput.addEventListener('input', () => {
         .trim()
         .normalize('NFD')
         .replace(/[\u0300-\u036f]/g, '')
+        .replace(/['‘’`´ʼʻʹ′]/g, '')
         .replace(/\s+/g, '-')
-        .replace(/['’]/g, '');
+        .replace(/[^a-z0-9а-яё-]/gi, '');
 });
 
 textOutput.addEventListener('click', () => {
