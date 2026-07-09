@@ -6,14 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="text_converter.css">
     <title>text converter</title>
+    <script src="text_converter.js" defer></script>
 </head>
 
 <body>
-    <div id="container">
-        <textarea id="input-text" placeholder="input text here"></textarea>
-        <textarea id="output-text" placeholder="click to copy" readonly></textarea>
+    <div id="main-wrapper">
+        <div id="container">
+            <textarea id="input-text" placeholder="input text here"></textarea>
+            <textarea id="output-text" placeholder="click to copy" readonly></textarea>
+        </div>
+
+        <div id="options">
+            <label>
+                <input type="checkbox" id="keep-lines">
+                <span>keep line breaks</span>
+            </label>
+        </div>
     </div>
-    <script src="text_converter.js"></script>
 </body>
 
 </html>
