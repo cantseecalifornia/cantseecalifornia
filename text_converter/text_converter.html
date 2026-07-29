@@ -12,8 +12,15 @@
 <body>
     <div id="main-wrapper">
         <div id="container">
-            <textarea id="input-text" placeholder="input text here"></textarea>
-            <textarea id="output-text" placeholder="click to copy" readonly></textarea>
+            <div class="field-group">
+                <textarea id="input-text" placeholder="input text here"></textarea>
+                <div class="char-count" id="input-count">chars: 0</div>
+            </div>
+            
+            <div class="field-group">
+                <textarea id="output-text" placeholder="click to copy" readonly></textarea>
+                <div class="char-count" id="output-count">chars: 0</div>
+            </div>
         </div>
 
         <div id="options">
