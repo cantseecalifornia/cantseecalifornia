@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>cs 1.6 bg maker</title>
+  <link rel="stylesheet" href="bg_maker.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div>
+        <h1>CS 1.6 Background Maker</h1>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section class="card controls">
+        <div id="drop" class="drop">
+          <div>
+            <strong>Select or drag an image here</strong>
+          </div>
+          <input id="file" type="file" accept="image/*">
+        </div>
+
+        <div class="row">
+          <label for="preset">Resolution</label>
+          <select id="preset">
+            <option value="1920x1080">1920 × 1080 — 16:9</option>
+            <option value="1600x1200">1600 × 1200 — 4:3</option>
+            <option value="1280x1024">1280 × 1024 — 5:4</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <label for="fit">Image fitting</label>
+          <select id="fit">
+            <option value="cover">Fill - crop excess edges</option>
+            <option value="contain">Fit - keep the whole image</option>
+          </select>
+        </div>
+
+        <button id="make" disabled>Create</button>
+        <div class="progress" id="progress"><i></i></div>
+        <div class="status" id="status"></div>
+      </section>
+
+      <section class="card preview">
+        <div class="preview-head">
+          <b>Preview</b>
+          <span id="dimensions">No image selected</span>
+        </div>
+        <div class="canvas-wrap">
+          <canvas id="preview" width="1920" height="1080"></canvas>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="bg_maker.js"></script>
+</body>
+</html>
